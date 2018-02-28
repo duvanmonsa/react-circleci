@@ -37,4 +37,4 @@ jobs:
       - run: yarn test
 
       # run cypress!
-      - run: npm run cypress:open
+      - run: tarm test-cypress
