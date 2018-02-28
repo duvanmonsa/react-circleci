@@ -17,6 +17,6 @@
   },
   "devDependencies": {
     "cypress": "^2.0.4",
-    "pushstate-server": "^3.0.1",
+    "pushstate-server": "^3.0.1"
   }
 }
