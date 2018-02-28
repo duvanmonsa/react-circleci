@@ -37,4 +37,4 @@ jobs:
       - run: yarn test
 
       # run cypress!
-      - run: tarm test-cypress
+      - run: yarn test-cypress
