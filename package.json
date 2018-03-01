@@ -19,8 +19,8 @@
     "cypress": "cypress run",
     "clone-api": "rm -rf react-circleci-api && git clone git@github.com:duvanmonsa/react-circleci-api.git",
     "install-api": "cd react-circleci-api && yarn install",
-    "add-api": "yarn run clone-api && yarn run install-api && yarn run serve-api",
-    "test-cypress": "yarn build  && run-p --race add-api serve-build  cypress"
+    "add-api": "yarn run clone-api && yarn run install-api",
+    "run-site": "yarn build  && run-p --race add-api serve-build"
   },
   "devDependencies": {
     "cypress": "^2.0.4",
