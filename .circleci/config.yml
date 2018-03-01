@@ -35,7 +35,7 @@ jobs:
       # run tests!
       - run: yarn test
 
-      - run: yarn run add-api
+      - run:
           name: Clone Api
           command: git clone git@github.com:duvanmonsa/react-circleci-api.git ~/repoapi
 #
