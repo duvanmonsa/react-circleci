@@ -35,17 +35,17 @@ jobs:
       # run tests!
       - run: yarn test
 
-      - run:
-          name: Clone Api
-          command: git clone git@github.com:duvanmonsa/react-circleci-api.git ~/repoapi
+#      - run:
+#          name: Clone Api
+#          command: git clone git@github.com:duvanmonsa/react-circleci-api.git ~/repoapi
+##
+#      - run:
+#          name: Npm Install Api
+#          command: cd react-circleci-api && npm install
 #
-      - run:
-          name: Npm Install Api
-          command: cd react-circleci-api && npm install
-
-      - run:
-          name: Npm run Api
-          command: npm start
+#      - run:
+#          name: Npm run Api
+#          command: npm start
 
       # run cypress!
       - run: yarn test-cypress
