@@ -36,16 +36,16 @@ jobs:
       - run: yarn test
 
       - run: yarn run add-api
-        name: Clone Api
-        command: git clone git@github.com:duvanmonsa/react-circleci-api.git ~/repoapi
+          name: Clone Api
+          command: git clone git@github.com:duvanmonsa/react-circleci-api.git ~/repoapi
 #
       - run:
-        name: Yarn Install Api
-        command: yarn install ~/repoapi
+          name: Yarn Install Api
+          command: yarn install ~/repoapi
 
       - run:
-        name: Yarn run Api
-        command: yarn start ~/repoapi
+          name: Yarn run Api
+          command: yarn start ~/repoapi
 
       # run cypress!
       - run: yarn test-cypress
