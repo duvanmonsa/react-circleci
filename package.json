@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
@@ -11,10 +12,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "serve-build": "pushstate-server ./build 3000",
+    "serve-api": "node react-circleci-api/app.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "cypress": "cypress run",
-    "test-cypress": "yarn build && run-p --race serve-build cypress"
+    "clone-api": "rm -rf react-circleci-api && git clone git@github.com:duvanmonsa/react-circleci-api.git",
+    "install-api": "cd react-circleci-api && yarn install",
+    "add-api": "yarn run clone-api && yarn run install-api && yarn run serve-api",
+    "test-cypress": "yarn build  && run-p --race add-api serve-build  cypress"
   },
   "devDependencies": {
     "cypress": "^2.0.4",
