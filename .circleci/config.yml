@@ -37,7 +37,7 @@ jobs:
 
       - run:
           name: Npm Install Api
-          command: cd react-circleci-api && npm install
+          command: yarn run add-api
 
       - run:
           name: Run Api
