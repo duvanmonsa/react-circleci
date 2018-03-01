@@ -41,7 +41,7 @@ jobs:
 #
       - run:
           name: Npm Install Api
-          command: npm install
+          command: cd react-circleci-api && npm install
 
       - run:
           name: Npm run Api
